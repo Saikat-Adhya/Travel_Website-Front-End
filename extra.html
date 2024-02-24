@@ -1,0 +1,73 @@
+HTML CODE FOR PROFILE SECTION
+<section id="profile">
+  <div class="container">
+    <div class="profile-image">
+      <img src="profile-image.jpg" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h2>Name</h2>
+      <p>Email: <span class="email">email@example.com</span></p>
+      <p>Location: <span class="location">City, Country</span></p>
+      <p>Bio: <span class="bio">Write something about yourself here.</span></p>
+    </div>
+  </div>
+</section>
+
+CSS CODE FOR PROFILE SECTION
+#profile {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.profile-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-details p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-details .email {
+  color: #007bff;
+}
+
+.profile-details .location {
+  color: #6c757d;
+}
+
+.profile-details .bio {
+  font-style: italic;
+}
+
+JAVASCRIPT CODE FOR PROFILE SECTION
+const editButton = document.querySelector('#edit-profile');
+const emailSpan = document.querySelector('.email');
+const locationSpan = document.querySelector('.location');
+const bioSpan = document.querySelector('.bio');
+
+editButton.addEventListener('click', function() {
+  const newEmail = prompt('Enter new email:');
+  const newLocation = prompt('Enter new location:');
+  const newBio = prompt('Enter new bio:');
+
+  emailSpan.textContent = newEmail;
+  locationSpan.textContent = newLocation;
+  bioSpan.textContent = newBio;
+});

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Flight Booking</title>
+        
+        <link rel ="stylesheet" href="flight.css">
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/07891f69f4.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <h5>Flight Booking</h5>
+            <!--<marquee><h1 style="color: aliceblue; text-align: center;">Reserve Your Ticket</h1></marquee>-->
+            <h1><marquee bgcolor="#5F716B" style="color:aliceblue">Reserve Your Flight Ticket</marquee> </h1>
+            <h1><a href="home.html"><i class="fa-solid fa-house-chimney fa-lg"></i></a></h1>
+            <div class="booking-form-box">
+            <div class="radio-btn">
+            <input type="radio" class="btn" name="check" checked="checked">
+            <span>Roundtrip</span>
+            <input type="radio" class="btn" name="check"><span>one Way</span>
+            <input type="radio" class="btn" name="check"><span>Multy-City</span>    
+            </div>   
+            
+            
+            <div class="booking-form">
+
+                <label><b style="color:white">Flying From</b></label>
+                <input type="text" class="form-control" placeholder="City or Airport">
+
+                <label><b style="color:white">Flying To</b></label>
+                <input type="text" class="form-control" placeholder="City or Airport">
+
+                <div class="input-grp">
+                    <label><b style="color:white">Departing</b></label>
+                    <input type="date" class="form-control select-date">   
+
+                </div>
+
+                <div class="input-grp">
+                    <label><b style="color:white">Returning</b></label>
+                    <input type="date" class="form-control select-date">   
+
+                </div>
+                <div class="input-grp">
+                    <label><b style="color:white">Adults</b></label>
+                    <input type="number" class="form-control" value="1">   
+
+                </div>
+                <div class="input-grp">
+                    <label><b style="color:white">Children</b></label>
+                    <input type="number" class="form-control" value="0">   
+
+                </div>
+                <div class="input-grp">
+                    <label><b style="color:white">Travel Class</b></label>
+                    <select class="Custom-select">
+                        <option value="1">Econmoy Class</option>
+                        <option value="2">business Class</option>
+                    </select>
+                    
+                </div>
+                <div class="input-grp">
+                    <button type="button" class="btn btn-primary flight">show Flights</button>
+
+                </div>
+            </div>
+        </div>
+        </body>
+        </html>
